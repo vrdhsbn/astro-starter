@@ -17,6 +17,5 @@ export default defineConfig({
     // format: 'file',
     inlineStylesheets: 'never',
   },
-  compressHTML: false,
-  integrations: [react(), tailwind(), compress({ CSS: false, Image: false, SVG: false })],
+  integrations: [react(), tailwind(), compress({ HTML: false, Image: false, SVG: false })],
 })
