@@ -1,9 +1,8 @@
 import react from '@astrojs/react'
+import tailwindcss from '@tailwindcss/vite'
 import compress from 'astro-compress'
-// @ts-check
+// @ts-check'
 import { defineConfig } from 'astro/config'
-
-import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,5 +16,8 @@ export default defineConfig({
     // format: 'file',
     inlineStylesheets: 'never',
   },
-  integrations: [react(), tailwind(), compress({ HTML: false, Image: false, SVG: false })],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [react(), compress({ HTML: false, Image: false, SVG: false })],
 })
