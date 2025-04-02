@@ -6,6 +6,10 @@ import { defineConfig } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
+  // base: '',
+  // outDir: '',
+  // site: '',
+  trailingSlash: 'always',
   server: {
     open: true,
   },
@@ -16,8 +20,9 @@ export default defineConfig({
     // format: 'file',
     inlineStylesheets: 'never',
   },
+  compressHTML: false,
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [react(), compress({ HTML: false, Image: false, SVG: false })],
+  integrations: [react(), compress({ HTML: false, CSS: false, Image: false, SVG: false })],
 })
