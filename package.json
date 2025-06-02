@@ -12,23 +12,23 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
-    "@astrojs/react": "4.2.3",
-    "@tailwindcss/vite": "^4.1.0",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
-    "astro": "5.5.6",
-    "astro-compress": "^2.3.7",
+    "@astrojs/react": "4.3.0",
+    "@tailwindcss/vite": "^4.1.8",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "astro": "5.8.1",
+    "astro-compress": "^2.3.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.0",
-    "typescript": "^5.8.2"
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "js-beautify": "^1.15.4",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "sass": "^1.86.1"
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "sass": "^1.89.1"
   }
 }
