@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -7,22 +7,32 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": []
+    "includes": [
+      "**/*.{astro,js,jsx,ts,tsx,json}",
+      "!**/node_modules",
+      "!**/.next",
+      "!**/.astro",
+      "!**/dist",
+      "!**/build"
+    ]
   },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
-    "ignore": ["node_modules", ".next", ".astro"],
     "indentWidth": 2,
     "indentStyle": "space",
     "lineWidth": 100
   },
-  "organizeImports": {
-    "enabled": true
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "linter": {
     "enabled": true,
-    "ignore": ["node_modules"],
+    "includes": ["!**/*.astro"],
     "rules": {
       "recommended": true,
       "correctness": {
@@ -48,20 +58,14 @@
     "globals": ["$", "_", "React", "Astro"]
   },
   "json": {
-    "parser": { "allowComments": true },
+    "parser": {
+      "allowComments": true
+    },
     "formatter": {
       "enabled": true,
       "indentStyle": "space",
       "indentWidth": 2,
       "lineWidth": 80
     }
-  },
-  "overrides": [
-    {
-      "include": ["*.astro"],
-      "linter": {
-        "enabled": false
-      }
-    }
-  ]
+  }
 }
