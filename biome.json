@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.13/schema.json",
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -8,7 +8,7 @@
   "files": {
     "ignoreUnknown": false,
     "includes": [
-      "**/*.{astro,js,jsx,ts,tsx,json}",
+      "**/*.{js,jsx,ts,tsx,json}",
       "!**/node_modules",
       "!**/.next",
       "!**/.astro",
@@ -21,7 +21,7 @@
     "formatWithErrors": false,
     "indentWidth": 2,
     "indentStyle": "space",
-    "lineWidth": 100
+    "lineWidth": 80
   },
   "assist": {
     "actions": {
@@ -44,9 +44,6 @@
     }
   },
   "javascript": {
-    "parser": {
-      "unsafeParameterDecoratorsEnabled": true
-    },
     "formatter": {
       "enabled": true,
       "quoteStyle": "single",
